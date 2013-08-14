@@ -27,13 +27,6 @@
   function imageURLForLineHeight(lineHeight) {
     return dataURL(baselineCanvasForLineHeight(lineHeight));
   }
-  function moBaselineDiv(lineHeight) {
-    var imageURL = imageURLForLineHeight(lineHeight);
-    var div = document.createElement('div');
-    div.setAttribute('id', 'mo-baseline');
-    div.setAttribute('style', 'position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; background-image: url("' + imageURL + '");');
-    return div;
-  }
 
   function find(a, fn) {
     for ( var i = 0; i < a.length; i += 1 ) {
