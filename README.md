@@ -1,10 +1,8 @@
-mo-baseline-grid.js
-===================
+# mo-baseline-grid.js
 
 Drop in a baseline grid on any page, useful when designing typography for layouts.
 
-Usage
------
+## Usage
 
 Just drop mo-baseline-grid in your page:
 
@@ -18,11 +16,9 @@ Or pull it from GitHub:
   <script src="http://bspaulding.github.io/mo-baseline-grid.js/mo-baseline-grid.js"></script>
 ```
 
-Options
--------
+## Options
 
-line-height
------------
+### line-height
 
 The default line-height is 32px. To customize the line-height, supply the ```data-line-height``` attribute:
 
@@ -30,8 +26,7 @@ The default line-height is 32px. To customize the line-height, supply the ```dat
   <script src="mo-baseline-grid.js" data-line-height="24"></script>
 ```
 
-color
------
+### color
 
 The default color of the baseline is black. To customize the color, supply the ```data-color``` attribute:
 
