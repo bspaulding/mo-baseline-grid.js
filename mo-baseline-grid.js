@@ -11,7 +11,7 @@
     var context = canvas.getContext('2d');
     context.moveTo(0, canvas.height);
     context.lineTo(canvas.width, canvas.height);
-    context.strokeStyle = '#000';
+    context.strokeStyle = moBaselineScriptTagOptions().color;
     context.stroke();
     return canvas;
   }
@@ -37,11 +37,26 @@
   function moBaselineScriptTag() {
     return find(document.getElementsByTagName('script'), function(tag) {
       return tag.src.match('baseline-grid.js');
-    }) || { getAttribute: function() { console.log('[mo-baseline-grid] data-line-height not provided. Using 32px grid.'); return 32; } };
+    });
+  }
+
+  function moBaselineScriptTagOptions() {
+    var tag = moBaselineScriptTag();
+    var options = {};
+
+    if ( tag ) {
+      options.line_height = tag.getAttribute('data-line-height');
+      options.color = tag.getAttribute('data-color');
+    }
+
+    options.line_height = options.line_height || 32;
+    options.color = options.color || '#000';
+
+    return options;
   }
 
   function lineHeight() {
-    return parseInt(moBaselineScriptTag().getAttribute('data-line-height'));
+    return parseInt(moBaselineScriptTagOptions().line_height);
   }
 
   function baselineStylesheet(lineHeight) {
