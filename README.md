@@ -7,11 +7,11 @@ Usage
 -----
 
 ```html
-  <script src="mo-baseline-grid"></script>
+  <script src="mo-baseline-grid.js"></script>
 ```
 
 This will default to a line-height of 32px. To customize the line-height, supply the ```data-line-height``` attribute:
 
 ```html
-  <script src="mo-baseline-grid" data-line-height="24"></script>
+  <script src="mo-baseline-grid.js" data-line-height="24"></script>
 ```
