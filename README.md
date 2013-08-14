@@ -18,8 +18,24 @@ Or pull it from GitHub:
   <script src="http://bspaulding.github.io/mo-baseline-grid.js/mo-baseline-grid.js"></script>
 ```
 
-This will default to a line-height of 32px. To customize the line-height, supply the ```data-line-height``` attribute:
+Options
+-------
+
+line-height
+-----------
+
+The default line-height is 32px. To customize the line-height, supply the ```data-line-height``` attribute:
 
 ```html
   <script src="mo-baseline-grid.js" data-line-height="24"></script>
 ```
+
+color
+-----
+
+The default color of the baseline is black. To customize the color, supply the ```data-color``` attribute:
+
+```html
+  <script src="mo-baseline-grid.js" data-color="red"></script>
+```
+
