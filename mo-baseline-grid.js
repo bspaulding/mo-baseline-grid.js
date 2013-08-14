@@ -45,9 +45,8 @@
   }
 
   function baselineStylesheet(lineHeight) {
-    var rule = 'body { background: url("' + imageURLForLineHeight(lineHeight) + '"); }';
     var stylesheet = document.createElement('style');
-    stylesheet.innerHTML = rule;
+    stylesheet.innerHTML = 'body { background: url("' + imageURLForLineHeight(lineHeight) + '"); }';
     return stylesheet;
   }
 
