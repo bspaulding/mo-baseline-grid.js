@@ -16,17 +16,6 @@
     return canvas;
   }
 
-  function drawLineAtCenter(canvas) {
-    var context = canvas.getContext('2d');
-    var midHeight = canvas.height / 2;
-    context.moveTo(0, midHeight);
-    context.lineTo(canvas.width, midHeight);
-    context.strokeStyle = '#000';
-    context.lineWidth = 0.5;
-    context.stroke();
-    return canvas;
-  }
-
   function baselineCanvasForLineHeight(lineHeight) {
     return drawLineAtBottom(makeCanvas(10, lineHeight));
   }
