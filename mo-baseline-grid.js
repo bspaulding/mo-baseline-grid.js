@@ -1,4 +1,4 @@
-window.MOBaselineGrid = (function() {
+(function() {
   function makeCanvas(width, height) {
     var canvas = document.createElement('canvas');
     canvas.setAttribute('width', width || 320);
