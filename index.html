@@ -41,15 +41,26 @@
 <div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://bspaulding.github.io/mo-baseline-grid.js/mo-baseline-grid.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 </pre></div>
 
-<p>This will default to a line-height of 32px. To customize the line-height, supply the <code>data-line-height</code> attribute:</p>
-
-<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"mo-baseline-grid.js"</span> <span class="na">data-line-height=</span><span class="s">"24"</span><span class="nt">&gt;&lt;/script&gt;</span>
-</pre></div>
-
         <h2>
 <a name="screenshot" class="anchor" href="#screenshot"><span class="octicon octicon-link"></span></a>Screenshot</h2>
 <p>The grid will take over your body's background image, looking something like this:<p>
 <img src="images/screenshot.png"/>
+
+        <h2>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
+<h3>line-height</h3>
+<p>The default line-height is 32px.</p><p>To customize the line-height, supply the <code>data-line-height</code> attribute:</p>
+
+<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"mo-baseline-grid.js"</span> <span class="na">data-line-height=</span><span class="s">"24"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<h3>color</h3>
+<p>The default color of the baseline is black.</p><p>To customize the color, supply the <code>data-color</code> attribute:</p>
+
+<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"mo-baseline-grid.js"</span> <span class="na">data-color=</span><span class="s">"red"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+<p>The value passed to color can be anything canvas's <code>strokeStyle</code> accepts. Any valid html color values should work.</p>
+
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/bspaulding">bspaulding</a></p>
